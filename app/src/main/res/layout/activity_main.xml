@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/bluesky"
+        />
+
+    <ImageView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_wave" />
+
+    <TextView
+        android:id="@+id/already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Already have an"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="15sp"/>
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_below="@id/already"
+        android:textColor="@color/white"
+        android:text="account?"
+        android:layout_marginStart="15sp"/>
+
+    <ImageView
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15sp"
+        android:layout_marginTop="15sp"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/blank"
+        android:layout_marginTop="120sp"
+        android:padding="20sp"
+        android:layout_marginStart="25sp"
+        android:layout_marginEnd="25sp"
+        android:background="@drawable/rounded"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:scrollHorizontally="true"
+        android:drawableStart="@drawable/ic"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/username"
+        android:layout_marginTop="20sp"
+        android:padding="20sp"
+        android:layout_marginStart="25sp"
+        android:layout_marginEnd="25sp"
+        android:background="@drawable/rounded"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:scrollHorizontally="true"
+        android:drawableStart="@drawable/ic"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsingup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20sp"
+        android:padding="20sp"
+        android:background="@drawable/rounded"
+        android:layout_marginStart="25sp"
+        android:layout_marginEnd="25sp"
+        android:text="Sing In"
+        />
+</RelativeLayout>

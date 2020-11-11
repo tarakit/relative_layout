@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LayoutTest</string>
+    <string name="account">Account?</string>
+    <string name="already_have_an">Already Have an</string>
+</resources>
